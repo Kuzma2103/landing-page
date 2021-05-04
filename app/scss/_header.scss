@@ -1,39 +1,108 @@
 .header {
-    nav {
-        padding: 22px 16px;
+  // Menu open styles
+  &.open {
+    .overlay {
+      display: block;
+    }
+  }
 
-        @include breakpoint-up(medium) {
-            padding: 28px 86px;
-        }
+  .overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba($veryDarkBlue, 0.9),
+      rgba($veryDarkBlue, 0.9)
+    );
+
+    &__content {
+        min-height: 100vh;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__links {
-        a {            
-            font-size: $font-sm;
-            color: $veryDarkBlue;
-            text-transform: uppercase;
-            transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;      
+      padding: 40px;
 
-            &:not(:last-child) {
-                margin-right: 22px;
-            }
+      a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        font-size: $font-med;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        border-top: 1px solid $grayishBlue;
 
-            &:hover {
-                color: $softRed;
-            }
+        &:nth-child(3) {
+          border-bottom: 1px solid $grayishBlue;
+          margin-bottom: 18px;
         }
+      }
+
+      &--btn {
+        background: transparent;
+        font-size: $font-med;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+      }
+
     }
 
-    &__btn--red {
-        padding: 7px 16px;
-        font-size: $font-sm;
-        background: $softRed;
-        border-color: $softRed;        
-
-        &:hover {
-            background: transparent;
-            color: $softRed;
-            box-shadow: 0px 10px 30px -7px rgba(0,0,0,0.45);
+    &__social {
+        text-align: center;
+        a {
+            margin-right: 20px;
         }
     }
+  }
+
+  nav {
+    padding: 22px 16px;
+    z-index: 10;
+
+    @include breakpoint-up(medium) {
+      padding: 28px 86px;
+    }
+  }
+
+  &__links {
+    a {
+      font-size: $font-sm;
+      color: $veryDarkBlue;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+
+      &:hover {
+        color: $softRed;
+      }
+    }
+  }
+
+  &__btn--red {
+    padding: 7px 16px;
+    font-size: $font-sm;
+    background: $softRed;
+    border-color: $softRed;
+
+    &:hover {
+      background: transparent;
+      color: $softRed;
+      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+    }
+  }
 }
