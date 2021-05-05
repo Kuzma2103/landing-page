@@ -25,12 +25,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
     }
 
     &__links {
       display: flex;
       flex-direction: column;      
       padding: 40px;
+      
 
       a {
         display: block;
@@ -68,12 +70,8 @@
   }
 
   nav {
-    padding: 22px 16px;
     z-index: 10;
 
-    @include breakpoint-up(medium) {
-      padding: 28px 86px;
-    }
   }
 
   &__links {

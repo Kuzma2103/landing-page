@@ -21,73 +21,168 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <!-- overlay menu -->
       <div class="overlay">
-        <div class="overlay__content">
-          <div>
-            <nav class="overlay__brand flex flex-jc-sb flex-ai-c">
-              <a href="/" class="header__logo">
-                <img src="img/logo-bookmark-white.svg" alt="logo" />
-              </a>
-              <a href="#" class="header__menu hide-for-desktop">
-                <img src="img/icon-close.svg" alt="close" />
-              </a>
-            </nav>
-            <div class="overlay__links">
-              <a href="#">Features</a>
-              <a href="#">Pricing</a>
-              <a href="#">Contact</a>
-              <button type="button" class="btn overlay__links--btn">
-                Login
-              </button>
+        <div class="container">
+          <div class="overlay__content">
+            <div>
+              <nav class="overlay__brand flex flex-jc-sb flex-ai-c">
+                <a href="/" class="header__logo">
+                  <img src="img/logo-bookmark-white.svg" alt="logo" />
+                </a>
+                <a href="#" class="header__menu hide-for-desktop">
+                  <img src="img/icon-close.svg" alt="close" />
+                </a>
+              </nav>
+              <div class="overlay__links">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+                <button type="button" class="btn overlay__links--btn">
+                  Login
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div class="overlay__social">
-            <a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a>
-            <a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a>
+            <div class="overlay__social">
+              <a href="#"><img src="img/icon-facebook.svg" alt="facebook" /></a>
+              <a href="#"><img src="img/icon-twitter.svg" alt="twitter" /></a>
+            </div>
           </div>
         </div>
       </div>
 
-      <nav class="flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src="img/logo-bookmark.svg" alt="logo" />
-        </a>
+      <div class="container">
+        <nav class="flex flex-jc-sb flex-ai-c">
+          <a href="/" class="header__logo">
+            <img src="img/logo-bookmark.svg" alt="logo" />
+          </a>
 
-        <a href="#" class="header__menu hide-for-desktop" id="btnMenu">
-          <img src="img/icon-hamburger.svg" alt="menu" />
-        </a>
+          <a href="#" class="header__menu hide-for-desktop" id="btnMenu">
+            <img src="img/icon-hamburger.svg" alt="menu" />
+          </a>
 
-        <div class="header__links hide-for-mobile">
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
-          <button type="button" class="btn header__btn--red">Login</button>
-        </div>
-      </nav>
+          <div class="header__links hide-for-mobile">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <button type="button" class="btn header__btn--red">Login</button>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- end header -->
+    <!-- hero section -->
+    <section class="hero container">
+      <div class="hero__img">
+        <img src="img/illustration-hero.svg" alt="hero" />
+      </div>
+      <div class="hero__text">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <a href="#" class="btn hero__cta">Get it on Chrome</a>
+        <a href="#" class="btn hero__cta--secondary">Get it on Firefox</a>
+      </div>
+    </section>
+    <!-- end hero section -->
+    <!-- features section -->
+    <section class="features">
+      <div class="features__text container">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+      <div class="features__tabs container">
+        <ul class="features__menu">
+          <li data-tab-target="#bookmark" class="features__menu--tab active">
+            Simple Bookmarking
+          </li>
+          <li data-tab-target="#searching" class="features__menu--tab">
+            Speedy Searching
+          </li>
+          <li data-tab-target="#sharing" class="features__menu--tab">
+            Easy Sharing
+          </li>
+        </ul>
 
-    A Simple Bookmark Manager A clean and simple interface to organize your
-    favourite websites. Open a new browser tab and see your sites load
-    instantly. Try it for free. Get it on Chrome Get it on Firefox Features Our
-    aim is to make it quick and easy for you to access your favourite websites.
-    Your bookmarks sync between your devices so you can access them on the go.
-    Simple Bookmarking Speedy Searching Easy Sharing Bookmark in one click
-    Organize your bookmarks however you like. Our simple drag-and-drop interface
-    gives you complete control over how you manage your favourite sites. More
-    Info Intelligent search Our powerful search feature will help you find saved
-    sites in no time at all. No need to trawl through all of your bookmarks.
-    More Info Share your bookmarks Easily share your bookmarks and collections
-    with others. Create a shareable link that you can send at the click of a
-    button. More Info Download the extension We’ve got more browsers in the
-    pipeline. Please do let us know if you’ve got a favourite you’d like us to
-    prioritize. Add to Chrome Minimum version 62 Add & Install Extension Add to
-    Firefox Minimum version 55 Add & Install Extension Add to Opera Minimum
-    version 46 Add & Install Extension Frequently Asked Questions Here are some
-    of our FAQs. If you have any other questions you’d like answered please feel
-    free to email us.
+        <div class="features__tab__content">
+          <div id="bookmark" data-tab-content class="active">
+            <div class="tab__item">
+              <div class="tab__item__img">
+                <img src="img/illustration-features-tab-1.svg" alt="tab 1" />
+              </div>
+              <div class="tab__item__text">
+                <h2>Bookmark in one click</h2>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <a href="#" class="btn">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div id="searching" data-tab-content>
+            <div class="tab__item">
+              <div class="tab__item__img">
+                <img src="img/illustration-features-tab-2.svg" alt="tab 2" />
+              </div>
+              <div class="tab__item__text">
+                <h2>Intelligent search</h2>
+                <p>
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <a href="#" class="btn">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div id="sharing" data-tab-content>
+            <div class="tab__item">
+              <div class="tab__item__img">
+                <img src="img/illustration-features-tab-3.svg" alt="tab 3" />
+              </div>
+              <div class="tab__item__text">
+                <h2>Share your bookmarks</h2>
+                <p>
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <a href="#" class="btn">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- end features section -->
+
+
+
+
+
+
+
+
+  
+    <!--           
+     Download the
+    extension We’ve got more browsers in the pipeline. Please do let us know if
+    you’ve got a favourite you’d like us to prioritize. Add to Chrome Minimum
+    version 62 Add & Install Extension Add to Firefox Minimum version 55 Add &
+    Install Extension Add to Opera Minimum version 46 Add & Install Extension
+    Frequently Asked Questions Here are some of our FAQs. If you have any other
+    questions you’d like answered please feel free to email us. -->
 
     <!-- Question 1 -->
     <!-- What is Bookmark? -->
@@ -132,14 +227,14 @@
   Pricing
   Contact -->
 
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
-    </footer>
+    </footer> -->
 
     <script src="/app/js/script.js"></script>
   </body>

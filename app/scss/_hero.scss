@@ -1,0 +1,72 @@
+.hero {
+  margin-top: 80px;
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    @include breakpoint-up(large) {
+      order: 2;
+      flex: 1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      order: 1;
+      flex: 1;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+      color: $veryDarkBlue;
+    }
+
+    p {
+      width: 90%;
+      line-height: 1.5;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+      @include breakpoint-up(large) {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__cta {
+    font-size: $font-sm;
+    font-weight: 500;
+    margin-right: 20px;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $softBlue;
+      color: $softBlue;
+      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+    }
+
+    &--secondary {
+      background: #fff;
+      font-size: $font-sm;
+      font-weight: 500;
+      color: $veryDarkBlue;
+      border: 2px solid #fff;
+      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+
+      &:hover {
+        border: 2px solid $veryDarkBlue;
+      }
+    }
+  }
+}

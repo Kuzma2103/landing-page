@@ -24,6 +24,12 @@ a:hover {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
 .btn {
   padding: 8px 12px;
   background: $softBlue;
