@@ -1,0 +1,95 @@
+.download {
+  margin: 80px 0;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: $font-lg;
+      color: $veryDarkBlue;
+      font-weight: 500;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: $font-med;
+
+      @include breakpoint-up(medium) {
+        width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      position: relative;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+
+      &__img {
+        margin-bottom: 25px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__text {
+        margin-bottom: 70px;
+
+        h2 {
+          font-size: $font-med;
+          color: $veryDarkBlue;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: $font-sm;
+        }
+      }
+      .dots {
+        position: absolute;
+        bottom: 27%;
+        left: 0;
+      }
+
+      &__cta {
+        width: 100%;
+
+        .btn {
+          display: block;
+          font-size: $font-sm;
+        }
+      }
+
+      &--firefox {
+        @include breakpoint-up(medium) {
+          margin-top: 80px;
+        }
+      }
+      &--opera {
+        @include breakpoint-up(medium) {
+          margin-top: 160px;
+        }
+      }
+    }
+  }
+}

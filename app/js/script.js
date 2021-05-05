@@ -1,7 +1,9 @@
+// For mobile menu
 const btnMenu = document.querySelector('#btnMenu');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 
+// For tabs
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
@@ -15,6 +17,7 @@ tabs.forEach((tab) => {
   });
 });
 
+// Mobile menu
 btnMenu.addEventListener('click', () => {
   console.log('menu button clicked');
 
