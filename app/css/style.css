@@ -612,4 +612,134 @@ a:hover {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.faq__cta {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contact {
+  background: #5368df;
+  color: #fff;
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.contact__text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__text h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact__text h2 {
+  font-size: 30px;
+}
+
+.contact__cta {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__cta .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #252b46;
+  line-height: 1.5;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40em) {
+  .contact__cta .form-control {
+    display: inline-block;
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+
+.contact__cta__btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fa5757;
+  border-radius: 6px;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__cta__btn:hover {
+  border: 2px solid #fa5757;
+  background: #fff;
+  color: #fa5757;
+}
+
+@media (min-width: 40em) {
+  .contact__cta__btn {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  background: #252b46;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (min-width: 40em) {
+  .footer__items {
+    flex-direction: row;
+  }
+}
+
+.footer__items__links {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .footer__items__links {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.footer__items__links a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__items__links a:hover {
+  color: #fa5757;
+}
+
+.footer__items__socials a {
+  margin-right: 20px;
+}
+
+.footer__items__socials a:hover path {
+  fill: #fa5757;
+}
 /*# sourceMappingURL=style.css.map */

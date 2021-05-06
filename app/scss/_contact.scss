@@ -1,0 +1,67 @@
+.contact {
+    background: $softBlue;
+    color: #fff;
+    padding: 80px 30px;
+    text-align: center;
+
+    &__text {
+        max-width: 600px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: $font-med;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: $font-lg;
+        }
+    }
+
+    &__cta {
+        max-width: 600px;
+        margin: 0 auto;
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: $font-sm;
+            color: $veryDarkBlue;
+            line-height: 1.5;
+            background: #fff;
+            border: none;
+            border-radius: 6px;
+            margin-bottom: 20px;
+
+            @include breakpoint-up(medium) {
+                display: inline-block;
+                width: 50%;
+                margin-right: 20px;
+            }
+        }
+
+        &__btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font-size: $font-sm;
+            font-weight: 500;
+            background: $softRed;
+            border-radius: 6px;
+            line-height: 1.5;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                border: 2px solid $softRed;
+                background: #fff;
+                color: $softRed;
+            }
+
+            @include breakpoint-up(medium) {
+                display: inline-block;
+                width: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.footer {
+  padding: 20px 0;
+  background: $veryDarkBlue;
+  color: #fff;
+  text-align: center;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      //   justify-content: space-around;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;  
+      
+      @include breakpoint-up(medium) {
+          flex-direction: row;
+          gap: 30px;
+      }
+
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          font-size: $font-med;
+          font-weight: 400;
+          margin-bottom: 20px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $softRed;
+          }
+        }
+      
+    }
+
+    &__socials {
+      a {
+        margin-right: 20px;
+
+        &:hover path {
+          fill: $softRed;
+        }
+      }
+    }
+  }
+}
