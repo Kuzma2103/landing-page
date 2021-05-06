@@ -2,6 +2,7 @@
 $softBlue: hsl(231, 69%, 60%);
 $softRed: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
+$lightGrayishBlue: lighten($grayishBlue, 30%);
 $veryDarkBlue: hsl(229, 31%, 21%);
 
 // Typography
@@ -9,3 +10,10 @@ $font-sm: 14px;
 $font-med: 18px;
 $font-lg: 30px;
 $font-xlg: 40px;
+
+$font-normal: 400;
+$font-bold: 500;
+
+// Utilities
+$transition: all 0.3s ease-in-out;
+$box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);

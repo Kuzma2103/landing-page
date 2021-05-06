@@ -20,19 +20,17 @@
     );
 
     &__content {
-        min-height: 100vh;
-        padding-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+      min-height: 100vh;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__links {
       display: flex;
-      flex-direction: column;      
+      flex-direction: column;
       padding: 40px;
-      
 
       a {
         display: block;
@@ -42,7 +40,7 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-        font-weight: 500;
+        font-weight: $font-bold;
         border-top: 1px solid $grayishBlue;
 
         &:nth-child(3) {
@@ -54,24 +52,22 @@
       &--btn {
         background: transparent;
         font-size: $font-med;
-        font-weight: 500;
+        font-weight: $font-bold;
         text-transform: uppercase;
         border: 2px solid #fff;
       }
-
     }
 
     &__social {
-        text-align: center;
-        a {
-            margin-right: 20px;
-        }
+      text-align: center;
+      a {
+        margin-right: 20px;
+      }
     }
   }
 
   nav {
     z-index: 10;
-
   }
 
   &__links {
@@ -79,7 +75,7 @@
       font-size: $font-sm;
       color: $veryDarkBlue;
       text-transform: uppercase;
-      transition: all 0.3s ease-in-out;
+      transition: $transition;
 
       &:not(:last-child) {
         margin-right: 22px;
@@ -100,7 +96,7 @@
     &:hover {
       background: transparent;
       color: $softRed;
-      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+      box-shadow: $box-shadow;
     }
   }
 }

@@ -8,34 +8,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
+
     @include breakpoint-up(medium) {
       flex-direction: row;
-      //   justify-content: space-around;
     }
 
     &__links {
       display: flex;
-      flex-direction: column;  
-      
+      flex-direction: column;
+
       @include breakpoint-up(medium) {
-          flex-direction: row;
-          gap: 30px;
+        flex-direction: row;
+        gap: 30px;
       }
 
-        a {
-          text-transform: uppercase;
-          color: #fff;
-          font-size: $font-med;
-          font-weight: 400;
-          margin-bottom: 20px;
-          transition: all 0.3s ease-in-out;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: $font-med;
+        font-weight: $font-normal;
+        margin-bottom: 20px;
+        transition: $transition;
 
-          &:hover {
-            color: $softRed;
-          }
+        @include breakpoint-up(medium) {
+          margin-bottom: 0;
         }
-      
+
+        &:hover {
+          color: $softRed;
+        }
+      }
     }
 
     &__socials {

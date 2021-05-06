@@ -68,6 +68,29 @@ a:hover {
   padding: 20px 16px;
 }
 
+.text__container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text__container h2 {
+  font-size: 30px;
+  color: #252b46;
+  font-weight: 500;
+}
+
+.text__container p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+@media (min-width: 40em) {
+  .text__container p {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
 .btn {
   padding: 8px 12px;
   background: #5368df;
@@ -284,28 +307,6 @@ a:hover {
   margin: 80px 0;
 }
 
-.features__text {
-  text-align: center;
-}
-
-.features__text h2 {
-  font-size: 30px;
-  color: #252b46;
-  font-weight: 500;
-}
-
-.features__text p {
-  line-height: 1.5;
-  font-size: 18px;
-}
-
-@media (min-width: 40em) {
-  .features__text p {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-
 .features__tabs [data-tab-content] {
   display: none;
 }
@@ -443,29 +444,6 @@ a:hover {
   margin: 80px 0;
 }
 
-.download__text {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.download__text h2 {
-  font-size: 30px;
-  color: #252b46;
-  font-weight: 500;
-}
-
-.download__text p {
-  line-height: 1.5;
-  font-size: 18px;
-}
-
-@media (min-width: 40em) {
-  .download__text p {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-
 .download__cards {
   display: flex;
   flex-direction: column;
@@ -546,29 +524,6 @@ a:hover {
   margin: 80px 0;
 }
 
-.faq__text {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.faq__text h2 {
-  font-size: 30px;
-  color: #252b46;
-  font-weight: 500;
-}
-
-.faq__text p {
-  line-height: 1.5;
-  font-size: 18px;
-}
-
-@media (min-width: 40em) {
-  .faq__text p {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-
 .faq__accordion {
   width: 90%;
   max-width: 600px;
@@ -577,7 +532,7 @@ a:hover {
 
 .faq__accordion__item {
   padding: 20px 0;
-  border-bottom: 1px solid #c8c9d0;
+  border-bottom: 1px solid #e3e4e8;
 }
 
 .faq__accordion__item__header {
@@ -701,6 +656,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
 }
 
@@ -729,6 +685,12 @@ a:hover {
   font-weight: 400;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 40em) {
+  .footer__items__links a {
+    margin-bottom: 0;
+  }
 }
 
 .footer__items__links a:hover {

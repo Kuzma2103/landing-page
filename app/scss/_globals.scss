@@ -13,8 +13,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: $font-med;
+  font-weight: $font-normal;
   color: $grayishBlue;
 }
 
@@ -30,6 +30,27 @@ a:hover {
   padding: 20px 16px;
 }
 
+.text__container {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: $font-lg;
+      color: $veryDarkBlue;
+      font-weight: $font-bold;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: $font-med;
+
+      @include breakpoint-up(medium) {
+        width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
+
 .btn {
   padding: 8px 12px;
   background: $softBlue;
@@ -37,7 +58,7 @@ a:hover {
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: $transition;
 }
 
 // Flexbox

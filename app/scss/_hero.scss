@@ -1,5 +1,6 @@
 .hero {
   margin-top: 80px;
+
   @include breakpoint-up(large) {
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@
 
     h1 {
       font-size: $font-xlg;
-      font-weight: 500;
+      font-weight: $font-bold;
       color: $veryDarkBlue;
     }
 
@@ -46,23 +47,23 @@
 
   &__cta {
     font-size: $font-sm;
-    font-weight: 500;
+    font-weight: $font-bold;
     margin-right: 20px;
 
     &:hover {
       background: transparent;
       border: 2px solid $softBlue;
       color: $softBlue;
-      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+      box-shadow: $box-shadow;
     }
 
     &--secondary {
       background: #fff;
       font-size: $font-sm;
-      font-weight: 500;
+      font-weight: $font-bold;
       color: $veryDarkBlue;
       border: 2px solid #fff;
-      box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.45);
+      box-shadow: $box-shadow;
 
       &:hover {
         border: 2px solid $veryDarkBlue;

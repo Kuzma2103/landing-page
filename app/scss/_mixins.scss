@@ -1,11 +1,3 @@
-// Breakpoints
-// - Mobile: 375px
-// - Desktop: 1440px
-
-@media (min-width: 64em) {
-    // styles
-}
-
 // 375px, 640px, 1024px, 1440px
 $breakpoints-up: ("small": "23.4375em", "medium": "40em", "large": "64em", "xlarge": "90em");
 

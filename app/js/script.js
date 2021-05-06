@@ -25,8 +25,6 @@ tabs.forEach((tab) => {
 
 // Mobile menu
 btnMenu.addEventListener('click', () => {
-  console.log('menu button clicked');
-
   if (header.classList.contains('open')) {
     header.classList.remove('open');
     btnMenu.style.opacity = '1';
@@ -55,7 +53,7 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
       activeAccordionItemHeader.classList.toggle('active');
       activeAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
     }
-
+    // Toggle acordion item
     accordionItemHeader.classList.toggle('active');
     const accordionItemBody = accordionItemHeader.nextElementSibling;
 

@@ -10,7 +10,7 @@
 
         h3 {
             font-size: $font-med;
-            font-weight: 400;
+            font-weight: $font-normal;
         }
 
         h2 {
@@ -46,11 +46,11 @@
             width: 100%;
             padding: 10px 0;
             font-size: $font-sm;
-            font-weight: 500;
+            font-weight: $font-bold;
             background: $softRed;
             border-radius: 6px;
             line-height: 1.5;
-            transition: all 0.3s ease-in-out;
+            transition: $transition;
 
             &:hover {
                 border: 2px solid $softRed;

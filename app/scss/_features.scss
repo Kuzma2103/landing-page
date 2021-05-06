@@ -1,26 +1,6 @@
 .features {
   margin: 80px 0;
 
-  &__text {
-    text-align: center;
-
-    h2 {
-      font-size: $font-lg;
-      color: $veryDarkBlue;
-      font-weight: 500;
-    }
-
-    p {
-      line-height: 1.5;
-      font-size: $font-med;
-
-      @include breakpoint-up(medium) {
-        width: 500px;
-        margin: 0 auto;
-      }
-    }
-  }
-
   &__tabs {
     [data-tab-content] {
       display: none;
@@ -48,17 +28,17 @@
       position: relative;
       padding: 30px 40px;
       color: $veryDarkBlue;
-      font-weight: 500;
+      font-weight: $font-bold;
       cursor: pointer;
-      border-top: 1px solid lighten($grayishBlue, 30%);
+      border-top: 1px solid $lightGrayishBlue;
 
       @include breakpoint-up(medium) {
         border-top: none;
-        border-bottom: 1px solid lighten($grayishBlue, 30%);
+        border-bottom: 1px solid $lightGrayishBlue;
       }
 
       &:nth-child(3) {
-        border-bottom: 1px solid lighten($grayishBlue, 30%);
+        border-bottom: 1px solid $lightGrayishBlue;
       }
 
       &::before {
@@ -71,7 +51,7 @@
         left: 0;
         right: 0;
         bottom: 0px;
-        transition: all 0.3s ease-in-out;
+        transition: $transition;
 
         @include breakpoint-up(medium) {
           width: 100%;
@@ -132,7 +112,7 @@
         p {
           font-size: $font-med;
           line-height: 1.5;
-          font-weight: 400;
+          font-weight: $font-normal;
           margin-bottom: 35px;
         }
 
