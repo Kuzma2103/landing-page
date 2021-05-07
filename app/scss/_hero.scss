@@ -7,6 +7,40 @@
   }
 
   &__img {
+    &::after {
+      content: '';
+      display: block;
+      width: 600px;
+      height: 200px;
+      background: $softBlue;
+      border-radius: 300px;
+      position: absolute;
+      top: 30%;
+      right: -50%;
+      z-index: -1;
+
+      @include breakpoint-up(medium) {
+        width: 800px;
+        height: 300px;
+        top: 35%;
+        right: -40%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 800px;
+        height: 250px;
+        top: 35%;
+        right: -30%;
+      }
+
+      @include breakpoint-up(xlarge) {
+        width: 1200px;
+        height: 400px;
+        top: 30%;
+        right: -30%;
+      }
+    }
+
     @include breakpoint-up(large) {
       order: 2;
       flex: 1;
@@ -14,6 +48,7 @@
 
     img {
       width: 100%;
+      position: relative;
     }
   }
 

@@ -16,6 +16,7 @@ body {
   font-size: $font-med;
   font-weight: $font-normal;
   color: $grayishBlue;
+  overflow-x: hidden;
 }
 
 a,
@@ -31,25 +32,25 @@ a:hover {
 }
 
 .text__container {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 
-    h2 {
-      font-size: $font-lg;
-      color: $veryDarkBlue;
-      font-weight: $font-bold;
-    }
+  h2 {
+    font-size: $font-lg;
+    color: $veryDarkBlue;
+    font-weight: $font-bold;
+  }
 
-    p {
-      line-height: 1.5;
-      font-size: $font-med;
+  p {
+    line-height: 1.5;
+    font-size: $font-med;
 
-      @include breakpoint-up(medium) {
-        width: 500px;
-        margin: 0 auto;
-      }
+    @include breakpoint-up(medium) {
+      width: 500px;
+      margin: 0 auto;
     }
   }
+}
 
 .btn {
   padding: 8px 12px;
@@ -79,14 +80,14 @@ a:hover {
 }
 
 // Visibility
-.hide-for-mobile {    
-    @include breakpoint-down(medium) {
-        display: none;
-    }
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }
 
 .hide-for-desktop {
-    @include breakpoint-up(large) {
-        display: none;
-    }
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }

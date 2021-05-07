@@ -86,11 +86,12 @@
 
       &__img {
         flex: 1;
+        position: relative;
         img {
           width: 100%;
 
           @include breakpoint-up(large) {
-              width: 80%;
+            width: 80%;
           }
         }
       }
@@ -101,7 +102,7 @@
         text-align: center;
 
         @include breakpoint-up(medium) {
-            text-align: left;
+          text-align: left;
         }
 
         h2 {
@@ -117,11 +118,11 @@
         }
 
         .btn {
-            display: none;
+          display: none;
 
-            @include breakpoint-up(medium) {
-                display: inline-block;
-            }
+          @include breakpoint-up(medium) {
+            display: inline-block;
+          }
         }
       }
     }
